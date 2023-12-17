@@ -1,6 +1,7 @@
 # ATMLib 2 + ArduboyFX demo
 
-Small demo showcasing ATMLib2 
+Small demo showcasing ATMLib2 alongside ArduboyFX
+The ATMlib must store music in PROGMEM, it is not currently compatible with storing sound data on the FX chip
 
 ## Installed libraries:
 ```
@@ -12,4 +13,4 @@ ATMlib           1.2.4     1.2.6     github.com/moduscreate/ATMlib2  The Arduboy
 ```
 
 ATMLib2 release: https://github.com/moduscreate/ATMlib2/releases/tag/v1.2.4
-Song taken from Modulus create ATMLib2 examples
+Song taken from Moduluscreate ATMlib2 exampples: ATMlib2/examples/songs/song01/ (BSD3)

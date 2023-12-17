@@ -78,10 +78,6 @@ void loop() {
 
     background.tick();
     FX::drawBitmap(20, 0, titleShip, 0, dbmMasked);
-    intro();
-    if (atm_synth_is_score_stopped()) {
-        atm_synth_play_score((const uint8_t *)&score);
-    }
 
     FX::display(CLEAR_BUFFER);
 }
