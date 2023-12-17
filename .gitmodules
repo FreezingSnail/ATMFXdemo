@@ -1,6 +1,6 @@
 [submodule "Arduboy-Python-Utilities"]
 	path = Arduboy-Python-Utilities
 	url = https://github.com/MrBlinky/Arduboy-Python-Utilities.git
-[submodule "trackerEditor"]
-	path = trackerEditor
-	url = https://github.com/ModusCreateOrg/trackerEditor.git
+[submodule "ATMLib2_trackerEditor"]
+	path = ATMLib2_trackerEditor
+	url = git@github.com:FreezingSnail/ATMLib2_trackerEditor.git
