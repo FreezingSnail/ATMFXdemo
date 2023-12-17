@@ -34,13 +34,8 @@ jobs:
       - name: install Homemade board
         run: arduino-cli core install arduboy-homemade:avr 
 
-      - name: find arduino-cli config
-        run: ls -la && ls -la ../
-
       - name: Allow "unsafe" lib install
-        uses: mikefarah/yq@master
-        with: 
-          cmd: yq -i '.library.enable_unsafe_install = true' ~/.arduino15/arduino-cli.yaml
+        run:  arduino-cli config set library.enable_unsafe_install true
 
       - name: Install ATMlib2 from Moduluscreate
         run: arduino-cli lib install --git-url https://github.com/moduscreate/ATMlib2.git
