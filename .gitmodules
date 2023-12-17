@@ -4,3 +4,6 @@
 [submodule "ATMLib2_trackerEditor"]
 	path = ATMLib2_trackerEditor
 	url = git@github.com:FreezingSnail/ATMLib2_trackerEditor.git
+[submodule "ATMlib2"]
+	path = ATMlib2
+	url = https://github.com/moduscreate/ATMlib2
