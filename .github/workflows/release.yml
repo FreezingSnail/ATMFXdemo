@@ -42,6 +42,9 @@ jobs:
       - name: Install ATMlib2 from Moduluscreate
         run: arduino-cli lib install --git-url https://github.com/moduscreate/ATMlib2.git
 
+      - name: Install Pillow for FX data generation
+        run: pip install Pillow
+
       - name: Generate FX data
         run: make gen
 
