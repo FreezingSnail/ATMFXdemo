@@ -1,0 +1,2 @@
+image_t explosion = "sprites/explosion_8x8.png"
+image_t titleShip = "sprites/titleShip_96x64.png"
