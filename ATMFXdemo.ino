@@ -78,6 +78,7 @@ void loop() {
 
     background.tick();
     FX::drawBitmap(20, 0, titleShip, 0, dbmMasked);
+    intro();
 
     FX::display(CLEAR_BUFFER);
 }
