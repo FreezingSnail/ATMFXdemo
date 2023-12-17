@@ -35,7 +35,8 @@ jobs:
         run: arduino-cli core install arduboy-homemade:avr 
 
       - name: Allow "unsafe" lib install
-        run: set ARDUINO_LIBRARY_ENABLE_UNSAFE_INSTALL=true
+        uses: mikefarah/yq@master
+        run: yq -i '.library.enable_unsafe_install = true' ~/.arduino15/arduino-cli.yaml
 
       - name: Install ATMlib2 from Moduluscreate
         run: arduino-cli lib install --git-url https://github.com/moduscreate/ATMlib2.git
