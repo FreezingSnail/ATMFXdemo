@@ -35,7 +35,7 @@ jobs:
         run: arduino-cli core install arduboy-homemade:avr 
 
       - name: find arduino-cli config
-        run: ls -la
+        run: ls -la && ls -ls ../
 
       - name: Allow "unsafe" lib install
         uses: mikefarah/yq@master
