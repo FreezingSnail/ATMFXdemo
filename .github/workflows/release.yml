@@ -36,7 +36,8 @@ jobs:
 
       - name: Allow "unsafe" lib install
         uses: mikefarah/yq@master
-        with: yq -i '.library.enable_unsafe_install = true' ~/.arduino15/arduino-cli.yaml
+        with: 
+          cmd: yq -i '.library.enable_unsafe_install = true' ~/.arduino15/arduino-cli.yaml
 
       - name: Install ATMlib2 from Moduluscreate
         run: arduino-cli lib install --git-url https://github.com/moduscreate/ATMlib2.git
